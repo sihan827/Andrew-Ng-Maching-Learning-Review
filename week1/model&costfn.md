@@ -25,6 +25,7 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 집의 크기를 통해 1000피트 당 가격을 예측하는 회귀 문제
 
 훈련 세트
+
 |집의 크기($feet^2$)|1000$feet^2$ 당 가격|
 |:----:|:----:|
 |2104|460|
