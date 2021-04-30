@@ -21,11 +21,11 @@ $h_\theta(x)=\theta_0+\theta_1x_1+\theta_2x_2+\cdots+\theta_nx_n$
 
 이를 벡터로 표현하여 더 간략화할 수 있다.
 
-$i$번째 입력 특성 벡터 $x=\begin{bmatrix}x_0^{(i)}\\x_1^{(i)}\\x_2^{(i)}\\\vdots\\x_n^{(i)}\end{bmatrix}$ ($(n+1)$차원 벡터)
+$i$번째 입력 특성 벡터 $x^{(i)}=\begin{bmatrix}x_0^{(i)}\\x_1^{(i)}\\x_2^{(i)}\\\vdots\\x_n^{(i)}\end{bmatrix}$ ($(n+1)$차원 벡터)
 
 파라미터 벡터 $\theta=\begin{bmatrix}\theta_0\\\theta_1\\\theta_2\\\vdots\\\theta_n\end{bmatrix}$ ($(n+1)$차원 벡터)
 
-$\theta_0$은 그대로 더하므로 $x_0=1$이다. 즉 가설은 다음과 같다.
+$\theta_0$은 그대로 더하므로 $x_0^{(i)}=1$이다. 즉 가설은 다음과 같다.
 
 $h_\theta(x)=\theta^Tx$
 
