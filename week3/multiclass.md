@@ -4,7 +4,7 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 
 <span style="color:pink">*이 글은 Coursera에서 Andrew Ng 교수님의 머신러닝 강의를 듣고 읽기 자료를 읽으면서 복습차원에서 개인적으로 요약한 글입니다.*<span>
 
-# 로지스틱 회귀 - Multiclass - classification
+# 로지스틱 회귀 - Multiclass classification
 
 ## 다중 클래스 분류
 앞의 강의에서 배운 것은 클래스가 두 개일 때의 로지스틱 회귀였다. 그러나 실세계의 문제에는 클래스가 여러 개인 문제가 많다. 예를 들면 날씨는 Sunny, Cloudy, Rain, Snow 등 분류될 수 있는 클래스가 많다. 이 경우에는 어떻게 해야 하는가? 
