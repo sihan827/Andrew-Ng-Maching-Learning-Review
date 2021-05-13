@@ -22,7 +22,7 @@ $h_\theta(x)=g(10-20x_1)$
 
 AND, OR, XOR, XNOR의 문제는 좀 다르다. 먼저 피연산자가 두 개이므로 입력 데이터도 $x_1$, $x_2$ 두 개가 된다. 먼저 AND, OR의 각 경우를 그래프로 그려보면 다음과 같다.
 
-<img src="/week4/image/and_or.jpg" width="40%" height="30%" title="AND and OR"></img>
+![AND와 OR](/week4/image/and_or.jpg)
 
 이미지에서 X 표시는 라벨이 1이고 O 표시는 라벨이 0인 데이터이다. 이미지에서 알 수 있듯이 AND와 OR은 결정 경계를 직선으로 그을 수 있다. 따라서 퍼셉트론 하나로 충분히 해결이 가능하다. 
 
