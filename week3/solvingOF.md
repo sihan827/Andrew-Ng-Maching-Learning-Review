@@ -39,7 +39,7 @@ $J(\theta)={1\over2m}\sum_{i=1}^m (h_{(\theta)}(x^{(i)})-y^{(i)})^2+1000\theta_3
 
 위의 아이디어를 $\theta$ 전체에 적용한다. 페널티는 $\lambda$로 표기한다. 식은 다음과 같다. 
 
-$J(\theta)={1\over2m}[\sum_{i=1}^m (h_{(\theta)}(x^{(i)})-y^{(i)})^2+\sum_{j=1}^n\theta_j^2]$
+$J(\theta)={1\over2m}[\sum_{i=1}^m (h_{(\theta)}(x^{(i)})-y^{(i)})^2+\lambda\sum_{j=1}^n\theta_j^2]$
 
 중요한 것은 뒤의 regularization 항에서 $\theta_0$이 제외된 것이다. 이는 $\theta_0$이 있을 때와 없을 때 학습 결과를 비교해 볼 때 없을 때 결과가 더 좋기 때문이라고 한다. 
 
@@ -50,7 +50,7 @@ $J(\theta)={1\over2m}[\sum_{i=1}^m (h_{(\theta)}(x^{(i)})-y^{(i)})^2+\sum_{j=1}^
 ## Regularization을 적용한 선형 회귀
 Regularization 기법을 적용한 선형회귀의 비용함수는 위에서 소개한 것과 같다. 
 
-$J(\theta)={1\over2m}[\sum_{i=1}^m (h_{(\theta)}(x^{(i)})-y^{1(i)})^2+\sum_{j=1}^n\theta_j^2]$
+$J(\theta)={1\over2m}[\sum_{i=1}^m (h_{(\theta)}(x^{(i)})-y^{1(i)})^2+\lambda\sum_{j=1}^n\theta_j^2]$
 
 이 식에 대하여 경사하강법을 적용하면 다음과 같이 $\theta_0$만 제외하고 regularization 항도 각 $\theta_j$에 대하여 편미분이 될 것이다.
 
@@ -72,7 +72,7 @@ $\theta=(X^TX+\lambda\begin{bmatrix}0&0&\cdots&0\\0&1&\cdots&0\\\vdots&0&\ddots&
 ## Regularization을 추가한 로지스틱 회귀
 로지스틱 회귀에 regularization을 적용하면 비용함수만 다르고 regularization 항 자체는 같다. 따라서 비용함수식은 다음과 같다.
 
-$J(\theta)={1\over m}\sum_{i=1}^m [-y^{(i)}log(h_\theta(x^{(i)}))-(1-y^{(i)})log(1-h_\theta(x^{(i)}))]+{1\over2m}\sum_{j=1}^n\theta_j^2$
+$J(\theta)={1\over m}\sum_{i=1}^m [-y^{(i)}log(h_\theta(x^{(i)}))-(1-y^{(i)})log(1-h_\theta(x^{(i)}))]+{\lambda\over2m}\sum_{j=1}^n\theta_j^2$
 
 경사하강법 알고리즘의 경우 비용함수 편미분시 선형회귀 비용함수 편미분과 유사하므로 regularization 항을 넣은 경사하강법 알고리즘도 선형회귀와 유사한 형태이다. 즉 다음과 같다.
 
