@@ -44,7 +44,7 @@ ${\partial\over\partial\theta_1}\approx {J(\theta_1, \theta_2, \cdots, \theta_n+
 
 ![0 초기화](/week5/image/zeroinit.png)
 
-위 신경망에서 $\theta^{(1)}$을 초기화 할 때 모든 파라미터가 0으로 초기화되었다고 생각해 보면 $\theta_{01}^{(1)}=\theta_{02}^{(1)}$, $\theta_{11}^{(1)}=\theta_{12}^{(1)}$, $\theta_{21}^{(1)}=\theta_{22}^{(1)}$이므로 $a_1^{(2)}=a_2^{(2)}$가 된다. 이는 역전파 시 $\delta_1^{(1)}=\delta_2^{(1)}$가 되서 ${\partial\over\partial\theta_{01}^{(1)}}J(\theta)={\partial\over\partial\theta_{02}^{(1)}}J(\theta), {\partial\over\partial\theta_{11}^{(1)}}J(\theta)={\partial\over\partial\theta_{12}^{(1)}}J(\theta), {\partial\over\partial\theta_{21}^{(1)}}J(\theta)={\partial\over\partial\theta_{22}^{(1)}}J(\theta)$이 된다. 이는 훈련 시에 서로 같은 미분값을 빼게 되는 것이므로 훈련이 계속 진행되도 $\theta_{11}^{(1)}=\theta_{12}^{(1)}$, $\theta_{21}^{(1)}=\theta_{22}^{(1)}$는 계속 유지된다. 이러면 레이어 2의 유닛을 2개로 나눈 이유가 없어지는 셈이다.
+위 신경망에서 $\theta^{(1)}$을 초기화 할 때 모든 파라미터가 0으로 초기화되었다고 생각해 보면 $\theta_{01}^{(1)}=\theta_{02}^{(1)}$, $\theta_{11}^{(1)}=\theta_{12}^{(1)}$, $\theta_{21}^{(1)}=\theta_{22}^{(1)}$이므로 $a_1^{(2)}=a_2^{(2)}$가 된다. 이는 역전파 시 $\delta_1^{(1)}=\delta_2^{(1)}$가 되서 ${\partial\over\partial\theta_{01}^{(1)}}J(\theta)={\partial\over\partial\theta_{02}^{(1)}}J(\theta), {\partial\over\partial\theta_{11}^{(1)}}J(\theta)={\partial\over\partial\theta_{12}^{(1)}}J(\theta), {\partial\over\partial\theta_{21}^{(1)}}J(\theta)={\partial\over\partial\theta_{22}^{(1)}}J(\theta)$이 된다. 이는 훈련 시에 서로 같은 미분값을 빼게 되는 것이므로 훈련이 계속 진행되도 $\theta_{01}^{(1)}=\theta_{02}^{(1)}, \theta_{11}^{(1)}=\theta_{12}^{(1)}$, $\theta_{21}^{(1)}=\theta_{22}^{(1)}$는 계속 유지된다. 이러면 레이어 2의 유닛을 2개로 나눈 이유가 없어지는 셈이다.
 
 따라서 파라미터들을 모두 0으로 초기화한다거나 같은 값으로 초기화하는 것은 의미가 없다. 따라서 모든 파라미터들을 랜덤으로 설정하는 것이 제일 바람직하다. 
 
